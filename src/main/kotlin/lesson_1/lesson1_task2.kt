@@ -2,6 +2,18 @@ package org.example.lesson_1
 
 fun main(){
 
-        println("Тестовое задание к уроку 1 задаче 1")
-        println("Какие то доработки")
+    val numberOfOrders: Int = 75
+    val thankYouPurchase: String = "Спасибо за покупку"
+
+    println("Количество заказов $numberOfOrders штук")
+    println(thankYouPurchase)
+
+//    val numberOfEmployees = 2000
+//
+//    println("Количество работников $numberOfEmployees")
+
+    val numberOfEmployees = 1999
+
+    println("Количество работников после увольнений $numberOfEmployees рабочих единиц")
+
     }
