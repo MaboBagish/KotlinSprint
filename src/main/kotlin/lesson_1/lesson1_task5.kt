@@ -5,9 +5,9 @@ fun main() {
 
     var seconds = 6480
 
-    val remainingMinutes = (seconds % 3600 / sixty)
+    val remainingMinutes = (seconds/ sixty)-sixty
 
-    val remainingHour = (seconds / 3600)
+    val remainingHour = (seconds / sixty)/sixty
 
     val remainingSeconds = (seconds % sixty)
 
