@@ -1,31 +1,18 @@
 package org.example.lesson_1
 
-import jdk.internal.net.http.common.Log
 
-fun main(){
+fun main() {
 
     var seconds = 6480
-    println("Время в космосе в секундах -- $seconds секунд")
 
-    val minute = (seconds % 3600/60)
-    println("Время в космосе в минутах -- $minute минут")
+    val remainingMinutes = (seconds % 3600 / sixty)
 
-    val hour = (seconds/3600)
-    println("Время в космосе в часах -- $hour часов")
+    val remainingHour = (seconds / 3600)
 
-    seconds = seconds %60
-    println("Секунды не вошедшие в минуту -- $seconds секунд")
+    val remainingSeconds = (seconds % sixty)
 
-    println("Время проведенное космонавтом в открытом космосе -- $hour:$minute:$seconds")
-
-//    var minute = { seconds: 60 ->
-//    }
-//    println("Время в космосе в минутах -- $minute минут")
-//
-//    val hour: String = "01"
-//    minute = 40
-//    seconds = "00"
-//
-//    println("Время проведенное космонавтом в открытом космосе -- $hour:$minute:$seconds")
+    println("Время проведенное космонавтом в открытом космосе -- $remainingHour:$remainingMinutes:${"%02d".format(remainingSeconds)}")
 
 }
+
+const val sixty = 60
