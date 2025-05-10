@@ -1,21 +1,19 @@
 package org.example.lesson_2
 
 fun main() {
+
     var hours = 9
     var minutes = 39
     val travelTime = 457
-
-    val transformationHourInMinutes = hours * valueMinutesInHour + minutes
+    val transformationHourInMinutes = hours * VALUE + minutes
     val addTravelTime = transformationHourInMinutes + travelTime
 
-    minutes = addTravelTime % valueMinutesInHour
+    minutes = addTravelTime % VALUE
 
-    hours = addTravelTime / valueMinutesInHour
+    hours = addTravelTime / VALUE
 
-
-    println("$hours:$minutes")
-
+    println("${"%02d".format(hours)}:${"%02d".format(minutes)}")
 
 }
 
-const val valueMinutesInHour = 60
+const val VALUE = 60
