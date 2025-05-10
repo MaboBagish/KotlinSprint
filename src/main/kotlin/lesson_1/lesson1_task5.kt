@@ -3,16 +3,21 @@ package org.example.lesson_1
 
 fun main() {
 
-    var seconds = 6480
+    val seconds = 6480
 
-    val remainingMinutes = (seconds/ sixty)-sixty
+    val minutes = (seconds / SIXTY) - SIXTY
 
-    val remainingHour = (seconds / sixty)/sixty
+    val hour = (seconds / SIXTY) / SIXTY
 
-    val remainingSeconds = (seconds % sixty)
+    val remainingSeconds = (seconds % SIXTY)
 
-    println("Время проведенное космонавтом в открытом космосе -- $remainingHour:$remainingMinutes:${"%02d".format(remainingSeconds)}")
+    println(
+        "Время проведенное космонавтом в открытом космосе -- " +
+                "${"%02d".format(hour)}:" +
+                "${"%02d".format(minutes)}:" +
+                "%02d".format(remainingSeconds)
+    )
 
 }
 
-const val sixty = 60
+const val SIXTY = 60
