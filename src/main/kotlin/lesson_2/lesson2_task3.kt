@@ -5,15 +5,11 @@ fun main() {
     var hours = 9
     var minutes = 39
     val travelTime = 457
-    val transformationHourInMinutes = hours * VALUE + minutes
+    val transformationHourInMinutes = hours * NUMBER_OF_SECONDS_IN_A_MINUTE + minutes
     val addTravelTime = transformationHourInMinutes + travelTime
-
-    minutes = addTravelTime % VALUE
-
-    hours = addTravelTime / VALUE
-
-    println("${"%02d".format(hours)}:${"%02d".format(minutes)}")
-
+    minutes = addTravelTime % NUMBER_OF_SECONDS_IN_A_MINUTE
+    hours = addTravelTime / NUMBER_OF_SECONDS_IN_A_MINUTE
+    println("%02d:%02d".format(hours, minutes))
 }
 
-const val VALUE = 60
+const val NUMBER_OF_SECONDS_IN_A_MINUTE = 60
