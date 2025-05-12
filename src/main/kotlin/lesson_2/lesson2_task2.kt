@@ -16,5 +16,4 @@ fun main() {
 
     val averageSalary = (costs / (numberOfInterns + numberOfWorkers))
     println("Средняя зарплата сотрудников после прихода стажеров -- $averageSalary рублей")
-
 }
