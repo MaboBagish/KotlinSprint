@@ -10,7 +10,6 @@ fun main() {
     minutes = addTravelTime % NUMBER_OF_SECONDS_IN_A_MINUTE
     hours = addTravelTime / NUMBER_OF_SECONDS_IN_A_MINUTE
     println("%02d:%02d".format(hours, minutes))
-
 }
 
 const val NUMBER_OF_SECONDS_IN_A_MINUTE = 60
