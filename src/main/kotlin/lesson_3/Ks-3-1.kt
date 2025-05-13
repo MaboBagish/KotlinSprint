@@ -1,7 +1,5 @@
 package org.example.lesson_3
 
-import kotlin.random.Random
-
 fun main() {
 
     val name = "Mark"
@@ -9,7 +7,7 @@ fun main() {
     val evening = "Good evening!"
 
     val morningEvening = arrayOf(morning, evening)
-    val random: Int = Random.nextInt(1, 3)
+    val random: Int = (1..2).random()
     val morningOrEvening = morningEvening[random - 1]
     val greetings = if (morningOrEvening == morning) {
         "$morning $name"
@@ -18,5 +16,4 @@ fun main() {
     }
 
     println(greetings)
-
 }
