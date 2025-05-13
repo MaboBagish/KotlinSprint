@@ -18,6 +18,6 @@ fun main() {
                 "$numberToMultiply * $counter = ${numberToMultiply * (counter++)}\n" +
                 "$numberToMultiply * $counter = ${numberToMultiply * (counter++)}\n" +
                 "$numberToMultiply * $counter = ${numberToMultiply * (counter++)}\n" +
-                "$numberToMultiply * $counter = ${numberToMultiply * (counter++)}"
+                "$numberToMultiply * $counter = ${numberToMultiply * (counter)}"
     )
 }
