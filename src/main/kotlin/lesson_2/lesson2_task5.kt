@@ -1,4 +1,5 @@
 package org.example.lesson_2
+
 import kotlin.math.pow
 
 fun main() {
@@ -8,7 +9,7 @@ fun main() {
     val depositTerm: Double = 20.0
     var oneYear = 1
 
-    amountOfDeposit = amountOfDeposit * (oneYear+interestRate/ONE_HUNDRED_PROSENT).pow(depositTerm)
+    amountOfDeposit = amountOfDeposit * (oneYear + interestRate / ONE_HUNDRED_PROSENT).pow(depositTerm)
 
     println("${"%.3f".format(amountOfDeposit)}")
 }
