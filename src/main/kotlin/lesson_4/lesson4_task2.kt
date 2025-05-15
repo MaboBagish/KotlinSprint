@@ -1,5 +1,6 @@
 package org.example.lesson_4
 
+
 fun main() {
 
     val weightAverage = (35..100)
