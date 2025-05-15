@@ -2,25 +2,21 @@ package org.example.lesson_4
 
 fun main() {
 
-    val weightAverage = (35..100)
-    val volumeAverage = (0 until 100)
-    val weightFirstCargo: Int = 20
-    val volumeFirstCargo: Int = 80
-    val weightTwoCargo = 50
-    val volumeTwoCargo = 100
+    val weightAverage = 35..100
+    val valueAverage = 0 until 100
+
+    val weightCargoOne = 20
+    val valueCargoOne = 80
+    val weightCargoTwo = 50
+    val valueCargoTwo = 100
 
     println(
-        "Груз весом $weightFirstCargo и объемом $volumeFirstCargo соответствует категории Average: ${
-            if (weightFirstCargo in weightAverage && volumeFirstCargo in volumeAverage) {
-                true
-            } else false
-        }"
+        "Вес первого груза $weightCargoOne c объемом $valueCargoOne соответствует категории Average" +
+                " ${if (weightCargoOne in weightAverage && valueCargoOne in valueAverage) true else false}"
     )
+
     println(
-        "Груз весом $weightTwoCargo и объемом $volumeTwoCargo соответствует категории Average: ${
-            if (weightTwoCargo in weightAverage && volumeTwoCargo in volumeAverage) {
-                true
-            } else false
-        }"
+        "Вес первого груза $weightCargoTwo c объемом $valueCargoTwo соответствует категории Average" +
+                " ${if (weightCargoTwo in weightAverage && valueCargoTwo in valueAverage) true else false}"
     )
 }
