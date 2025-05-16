@@ -5,11 +5,11 @@ fun main() {
     var startingPosition = "e2"
     var finalPosition = "e4"
 
-    println("Первый ход. Пешка $startingPosition на $finalPosition")
+    println("$startingPosition-$finalPosition;0")
 
     startingPosition = "d2"
     finalPosition = "d3"
 
-    println("Второй ход. Пешка $startingPosition на $finalPosition")
+    println("$startingPosition-$finalPosition;1")
 
 }
