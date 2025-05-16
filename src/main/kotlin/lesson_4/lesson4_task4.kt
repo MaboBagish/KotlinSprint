@@ -3,11 +3,11 @@ package org.example.lesson_4
 fun main() {
 
     val day = 5
-    val armAndAbsWorkout = if (day % 2 == 0) false else true
-    val legAndBackWorkout = if (day % 2 == 0) true else false
+    val typeOfTraining = if (day % 2 == 0) false else true
 
-    println("Упражнение для рук: $armAndAbsWorkout\n" +
-            "Упражнение для ног: $legAndBackWorkout\n" +
-            "Упражнение для спины: $legAndBackWorkout\n" +
-            "Упражнение для пресса: $armAndAbsWorkout")
+
+    println("Упражнение для рук: ${if(typeOfTraining == true) true else false}\n" +
+            "Упражнение для ног: ${if(typeOfTraining == true) false else true}\n" +
+            "Упражнение для спины: ${if(typeOfTraining == true) false else true}\n" +
+            "Упражнение для пресса: ${if (typeOfTraining == true) true else false}\n")
 }
