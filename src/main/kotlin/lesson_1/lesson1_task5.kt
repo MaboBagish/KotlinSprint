@@ -1,6 +1,6 @@
 package org.example.lesson_1
 
-fun main(){
+fun main() {
 
     var seconds: String = "6480"
     println("Время в космосе в секундах -- $seconds секунд")
@@ -13,5 +13,6 @@ fun main(){
     seconds = "00"
 
     println("Время проведенное космонавтом в открытом космосе -- $hour:$minute:$seconds")
+
 
 }
