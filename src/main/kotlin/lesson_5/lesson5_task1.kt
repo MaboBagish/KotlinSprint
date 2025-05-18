@@ -4,12 +4,12 @@ fun main() {
 
     println("Для входа в приложение Вам нужно будет ввести результат сложения двух чисел")
 
-    val a = (0..10).random().toInt()
-    val b = (0..10).random().toInt()
+    val oneNumber = (0..10).random()
+    val twoNumber = (0..10).random()
 
-    println("Первое число $a + Второе число $b = какой будет результат ?")
+    println("Первое число $oneNumber + Второе число $twoNumber = какой будет результат ?")
     val answer = readln().toInt()
 
-    val resultat = if ((a + b) == answer) "Добро пожаловать" else "Доступ запрещен"
+    val resultat = if ((oneNumber + twoNumber) == answer) "Добро пожаловать" else "Доступ запрещен"
     println(resultat)
 }
